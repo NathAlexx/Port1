@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Protótipo de Análise de Código com IA</title>
+    <!--
+      Este protótipo foi criado para demonstrar uma solução simples de análise
+      de código e documentação automatizada. Ele não depende de APIs pagas
+      e pode ser hospedado diretamente no GitHub Pages. A interface é
+      responsiva e pode ser utilizada em português. Sinta‑se à vontade
+      para personalizar o estilo e os textos conforme necessário.
+    -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Protótipo de Análise de Código com IA</h1>
+      <p>
+        Insira um trecho de código abaixo. O protótipo irá gerar uma
+        explicação resumida, sugerir melhorias e criar uma documentação
+        básica. Nenhuma informação é enviada para servidores externos.
+      </p>
+    </header>
+    <main>
+      <section id="input-section" class="card">
+        <label for="code-input">Cole seu código aqui:</label>
+        <textarea
+          id="code-input"
+          placeholder="digite ou cole o código…"
+          rows="12"
+        ></textarea>
+        <button id="analyze-btn">Analisar Código</button>
+      </section>
+      <section id="output-section" class="card hidden">
+        <h2>Resultado da Análise</h2>
+        <h3>Código Original</h3>
+        <pre id="original-code" class="code-block"></pre>
+
+        <h3>Explicação Gerada</h3>
+        <p id="explanation"></p>
+
+        <h3>Sugestão de Melhoria</h3>
+        <p id="suggestion"></p>
+
+        <h3>Documentação Gerada</h3>
+        <pre id="documentation" class="code-block"></pre>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Este é um protótipo educacional de um serviço de análise de código com
+        IA. Hospede este site gratuitamente no GitHub Pages criando um
+        repositório público e ativando o GitHub Pages nas configurações.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
